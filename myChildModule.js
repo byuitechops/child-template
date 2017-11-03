@@ -3,6 +3,7 @@
 /* Module Description */
 
 /* Put dependencies here */
+const standardTests = require('child-module-standard-tests');
 
 /* Include this line only if working on a post-import child module */
 // const canvas = require('canvas-wrapper');

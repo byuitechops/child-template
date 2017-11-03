@@ -1,4 +1,5 @@
 node_modules/
 auth.json
-D2LOrigina/*
+results.json
+D2LOriginal/*
 D2LProcessing/*
