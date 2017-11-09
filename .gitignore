@@ -1,7 +1,7 @@
 node_modules/
 auth.json
 results.json
-D2LOriginal/*
-D2LProcessing/*
 !D2LOriginal/.gitkeep
 !D2LProcessing/.gitkeep
+D2LOriginal/*
+D2LProcessing/*
