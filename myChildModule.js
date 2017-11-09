@@ -3,9 +3,8 @@
 /* Module Description */
 
 /* Put dependencies here */
-const standardTests = require('child-module-standard-tests');
 
-/* Include this line only if working on a post-import child module */
+/* Include this line only if you are going to use Canvas API */
 // const canvas = require('canvas-wrapper');
 
 /* View available course object functions */
@@ -22,10 +21,9 @@ module.exports = (course, stepCallback) => {
 
     /* How to report an error (Replace "moduleName") */
     // course.throwErr('moduleName', e);
+
     /* You should never call the stepCallback with an error. We want the
     whole program to run when testing so we can catch all existing errors */
 
     stepCallback(null, course);
-    /* DO NOT call the callback on an error - instead, continue
-    with your child module's process */
 };
