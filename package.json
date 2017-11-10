@@ -4,17 +4,15 @@
   "description": "Template for your children!",
   "main": "child.js",
   "dependencies": {
-    "async": "^2.6.0",
-    "child-development-kit": "github:byuitechops/child-development-kit",
-    "yargs": "^10.0.3"
+    "async": "^2.6.0"
   },
   "devDependencies": {
+    "child-development-kit": "github:byuitechops/child-development-kit",
     "tap": "^10.7.3"
   },
   "scripts": {
     "start": "node ./CLI/runChild.js",
-    "test": "tap ./CLI/testChild.js",
-    "updateD2L": "node ./CLI/runChild.js --update d2l"
+    "test": "tap ./CLI/testChild.js --cov",
   },
   "repository": {
     "type": "git",
