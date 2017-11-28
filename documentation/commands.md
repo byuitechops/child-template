@@ -4,7 +4,7 @@ A few different commands are available to make developing your child module as e
 
 ### npm start <1-4>
 
-This command runs your child module (currently only in `preImport` mode). Use this when you want to see if your module runs.
+This command runs your child module. Use this when you want to see if your module runs.
 
 Giving it a number between 1 and 4 designates which gauntlet it will run on. Giving it an invalid number will exit out of it with an error message. Giving it nothing will default to gauntlet 1.
 
@@ -14,6 +14,6 @@ This command runs your child module on **all four gauntlets**. After it runs it 
 
 You can view your code coverage in the console after the tests have completed.
 
-### npm start -- update < d2l | canvas >
+### npm start -- update d2l
 
-Run this command the first time you set up your child module project. This will update the gauntlet courses used in running your module. They are stored locally for `preImport` tests. It also updates the courses used for testing in Canvas to match the latest updates to the D2L Gauntlet courses.
+Run this command the first time you set up your child module project. This will update the gauntlet courses used in running your module. They are stored locally for `preImport` tests, and so you can have a course object when running `postImport` modules.
