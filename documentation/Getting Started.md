@@ -24,7 +24,9 @@ There's a few easy things you have to do to get started on your child module.
 
 10. Push your child module repository to Github, and confirm it pushed correctly.
 
-11. Open `main.js` in your editor and go ham. `main.js` is where your child module code will live. Please do not change the file's name, since the Child Development Kit refers to it directly.
+11. Open `main.js` in your editor and go ham. `main.js` is where your child module code will live. Use the command described below to run and test your module.
+
+*Note:* Please do not change the name of your `main.js`, since the Child Development Kit refers to it directly.
 
 ## The Commands You Need To know
 
