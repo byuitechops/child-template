@@ -4,7 +4,7 @@ There's a few easy things you have to do to get started on your child module.
 
 1. Create a new repository on Github. Name it after what your child module does in all lower-case letters, with dashes instead of spaces. Example: "delete-duplicate-files"
 
-2. Use `git clone <repository url>` to clone the repository to your computer.
+2. Use `git clone <repository url>` to clone the repository to your computer. Then use `cd <repository-name>` to move into it in the commandline.
 
 3. Download the child template repository **as a zip file** by pressing the "Clone or Download" button (or just click [this](https://github.com/byuitechops/child-template/archive/master.zip)).
 
