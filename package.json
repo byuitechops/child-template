@@ -4,7 +4,7 @@
     "description": "Put your child module's description here",
     "main": "main.js",
     "dependencies": {
-        "canvas-wrapper": "git+https://github.com/byuitechops/Canvas-wrapper.git"
+        "canvas-wrapper": "github:byuitechops/canvas-wrapper"
     },
     "devDependencies": {
         "async": "^2.6.0",
@@ -25,5 +25,5 @@
         "url": "https://github.com/byuitechops/child-template/issues"
     },
     "homepage": "https://github.com/byuitechops/child-template#readme",
-    "childType": "preImport"
+    "childType": "postImport"
 }
