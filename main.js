@@ -18,6 +18,9 @@ module.exports = (course, stepCallback) => {
     /* Used to log successful actions */
     course.success('moduleName', 'moduleName successfully ...');
 
+    /* How to report a warning (Replace "moduleName") */
+    // course.throwWarning('moduleName', 'warning message...');
+    
     /* How to report an error (Replace "moduleName") */
     // course.throwErr('moduleName', e);
 
