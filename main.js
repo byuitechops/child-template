@@ -11,18 +11,18 @@
 // https://github.com/byuitechops/d2l-to-canvas-conversion-tool/blob/master/documentation/classFunctions.md
 
 module.exports = (course, stepCallback) => {
-    /* Create the module report so that we can access it later as needed.
-    This MUST be done at the beginning of each child module. */
-    course.addModuleReport('moduleName');
 
-    /* Used to log successful actions */
-    course.success('moduleName', 'moduleName successfully ...');
+    /* Used to log successful actions (specific items) */
+    course.log('Category', {'header': data});
 
-    /* How to report a warning (Replace "moduleName") */
-    // course.throwWarning('moduleName', 'warning message...');
+    /* How to log a generic message. Use in place of console.log */
+    course.message('message');
+
+    /* How to report a warning */
+    // course.warning('warning message...');
     
-    /* How to report an error (Replace "moduleName") */
-    // course.throwErr('moduleName', e);
+    /* How to report an error */
+    // course.error(err);
 
     /* You should never call the stepCallback with an error. We want the
     whole program to run when testing so we can catch all existing errors */
