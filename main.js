@@ -13,7 +13,7 @@
 module.exports = (course, stepCallback) => {
 
     /* Used to log successful actions (specific items) */
-    course.log('Category', {'header': data});
+    course.log('Category', {'header': 27});
 
     /* How to log a generic message. Use in place of console.log */
     course.message('message');
@@ -22,7 +22,7 @@ module.exports = (course, stepCallback) => {
     // course.warning('warning message...');
     
     /* How to report an error */
-    // course.error(err);
+    course.error(new Error('this is my fake err message'));
 
     /* You should never call the stepCallback with an error. We want the
     whole program to run when testing so we can catch all existing errors */
