@@ -3,46 +3,15 @@
 /* Dependencies */
 const tap = require('tap');
 
-function g1Tests(course, callback) {
-    // Tap tests for Gauntlet 1 go here
-    tap.pass('Success! Wheee! 1');
-    // tap.fail('YOLO');
-    callback(null, course);
-}
+var gauntlet1Tests = (test) => {
 
-function g2Tests(course, callback) {
-    // Tap tests for Gauntlet 2 go here
-    tap.pass('Success! Wheee! 2');
-    callback(null, course);
-}
+    console.log('potato');
 
-function g3Tests(course, callback) {
-    // Tap tests for Gauntlet 3 go here
-    tap.pass('Success! Wheee! 3');
-    callback(null, course);
-}
-
-function g4Tests(course, callback) {
-    // Tap tests for Gauntlet 4 go here
-    tap.pass('Success! Wheee! 4');
-    callback(null, course);
-}
+    test.pass('potato');
+    test.end();
+};
 
 module.exports = [
-        {
-            gauntlet: 1,
-            tests: g1Tests
-        },
-        {
-            gauntlet: 2,
-            tests: g2Tests
-        },
-        {
-            gauntlet: 3,
-            tests: g3Tests
-        },
-        {
-            gauntlet: 4,
-            tests: g4Tests
-        },
+    gauntlet1Tests
 ];
+
