@@ -1,17 +1,23 @@
-/*eslint-env node, es6*/
-
 /* Dependencies */
 const tap = require('tap');
 
-var gauntlet1Tests = (test) => {
+module.exports = (course, callback) => {
+    tap.test('child-template', (test) => {
 
-    console.log('potato');
+        test.pass('potato');
+        test.pass('potato');
+        test.pass('potato');
+        test.pass('potato');
+        test.pass('potato');
+        test.pass('potato');
+        test.pass('potato');
+        test.pass('potato');
+        test.pass('potato');
+        test.pass('potato');
+        test.pass('potato');
+        test.pass('potato');
+        test.end();
+    });
 
-    test.pass('potato');
-    test.end();
+    callback(null, course);
 };
-
-module.exports = [
-    gauntlet1Tests
-];
-

@@ -10,7 +10,7 @@
 
 module.exports = (course, stepCallback) => {
 
-
+    console.log('Desmond the moon bear!');
 
     /* You should never call the stepCallback with an error. We want the
     whole program to run when testing so we can catch all existing errors */
