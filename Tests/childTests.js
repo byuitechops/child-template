@@ -12,5 +12,6 @@ module.exports = (course, callback) => {
         test.end();
     });
 
-    callback(null, course);
+    // Always call the callback in your childTests with just null
+    callback(null);
 };
