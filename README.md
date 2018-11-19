@@ -1,58 +1,27 @@
-# Child Module Title
-### *Package Name*: child-module-title
-### *Child Type*: <post/pre import>
-### *Platform*: <online/pathway/campus/all> (Ask Zach or Daniel about this)
-### *Required*: <Required/Recommended/Optional> (Ask Zach or Daniel about this)
-
-This child module is built to be used by the Brigham Young University - Idaho D2L to Canvas Conversion Tool. It utilizes the standard `module.exports => (course, stepCallback)` signature and uses the Conversion Tool's standard logging functions. You can view extended documentation [Here](https://github.com/byuitechops/d2l-to-canvas-conversion-tool/tree/master/documentation).
+# Child Template
+### *Package Name*: child-template
 
 ## Purpose
+This is the boilerplate for a child-module in the [d2l-to-canvas-conversion-tool](https://github.com/byuitechops/d2l-to-canvas-conversion-tool). Use this template when creating a new child module.
 
-Describe the reason why this child module exists, and its goals.
+## Setup
 
-## How to Install
+When creating a new child module from this template **DO NOT CLONE** this repository (Download it instead). This just helps make sure we don't overwrite this template repository.
 
-```
-npm install my-child-module
-```
-
-## Run Requirements
-
-List any necessary requirements, such as fields on the `course.info` object. Include if it needs to run first, last, or similar stipulations. 
-
-## Options
-
-If there are options that need to be set before the module runs, include them in a table, like this:
-
-| Option | Values | Description |
-|--------|--------|-------------|
-|Create Lesson Folders| true/false | Determines if lesson folders should be created inside of "documents" and "media."|
-|Remove Course Image| true/false | Determines if the course image will be removed. |
-
-## Outputs
-
-If your module adds anything to `course.info` or anywhere else on the course object, please include a description of each in a table:
-
-| Option | Type | Location |
-|--------|--------|-------------|
-|Lesson Folders| Array | course.info|
-
-## Process
-
-Describe in steps how the module accomplishes its goals.
-
-1. Does this thing
-2. Does that thing
-3. Does that other thing
-
-## Log Categories
-
-List the categories used in logging data in your module.
-
-- Discussions Created
-- Canvas Files Deleted
-- etc.
-
-## Requirements
-
-These are the expectations for the child module. What does it need to do? What is the "customer" wanting from it? 
+These are the steps to turn this boilerplate into your very own child module:
+1. Download this repository (**DO NOT CLONE** - we don't want you to overwrite this boilerplate).
+2. Extract and rename repository.
+    -  Name your repository what action it performs & what item it affects.
+3. Create a new git repository on GitHub.
+4. Initialize a new git repository locally & connect it to GitHub.
+5. Update package.json
+    - The following fields need to be updated: 
+        - name
+        - description
+        - `repository.url`
+        - author
+        - `bugs.url`
+        - homepage
+        -childType
+6. Fill out `readme template.md` and rename it `README.md` (replace this readme)
+5. Use `main.js` to start Coding! 😄
